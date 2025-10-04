@@ -1,94 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>☄️ MERCENIES</title>
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Orbitron', sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3em;
-      margin-top: 40px;
-      color: #ff2d2d;
-      text-shadow: 0 0 15px #ff2d2d;
-    }
-    p {
-      color: #aaa;
-      margin: 10px 0 30px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #ff2d2d;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      box-shadow: 0 0 15px #ff2d2d;
-      transition: 0.2s;
-    }
-    .btn:hover {
-      background: #cc0000;
-      box-shadow: 0 0 25px #ff2d2d;
-    }
-    .grid {
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .card {
-      background: rgba(20,20,20,0.9);
-      border: 2px solid #ff2d2d;
-      border-radius: 12px;
-      width: 250px;
-      padding: 30px;
-      box-shadow: 0 0 20px #ff2d2d88;
-      transition: 0.3s;
-    }
-    .card:hover {
-      box-shadow: 0 0 40px #ff2d2d;
-    }
-    .card h2 {
-      color: #ff2d2d;
-      margin-bottom: 15px;
-    }
-    footer {
-      margin: 40px 0;
-      font-size: 0.9em;
-      color: #555;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERCENIES PORTAL</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="matrix.js" defer></script>
 </head>
 <body>
-  <h1>☄️ MERCENIES</h1>
-  <p>COMMUNITY PORTAL · RESOURCES · TUTORIALS</p>
-  <a href="https://discord.gg/MGJPWzYqBq" class="btn">JOIN OUR COMMUNITY</a>
+  <canvas id="matrixBackground"></canvas>
 
-  <div class="grid">
-    <a href="beaming-sites.html" class="card">
-      <h2>MERCENIES BEAMING SITES</h2>
-      <p>FAST · SECURE · EXCLUSIVE</p>
-    </a>
+  <main class="portal-container">
+    <h1 class="portal-title">☄️ MERCENIES PORTAL ☄️</h1>
+    <div class="card-container">
+      
+      <!-- Card 1 -->
+      <div class="card" onclick="window.location.href='tools.html'">
+        <h2>TOOLS</h2>
+        <p>Access utilities and scripts designed for the MERCENIES network.</p>
+        <button>ENTER</button>
+      </div>
 
-    <a href="bypassers.html" class="card">
-      <h2>THE BYPASSERS</h2>
-      <p>EMAIL TOOLS · REFRESHER</p>
-    </a>
+      <!-- Card 2 -->
+      <div class="card" onclick="window.location.href='methods.html'">
+        <h2>METHODS</h2>
+        <p>Learn strategies and tutorials from the community.</p>
+        <button>ACCESS</button>
+      </div>
 
-    <a href="beaming-methods.html" class="card">
-      <h2>BEAMING METHODS</h2>
-      <p>TUTORIALS · SERVERS</p>
-    </a>
-  </div>
+      <!-- Card 3 -->
+      <div class="card" onclick="window.location.href='servers.html'">
+        <h2>SERVERS</h2>
+        <p>Find official community hubs and partner servers.</p>
+        <button>CONNECT</button>
+      </div>
+    </div>
 
-  <footer>© 2025 MERCENIES</footer>
+    <footer>
+      <a href="https://discord.gg/ZsXS7wdMST" target="_blank" class="footer-btn">JOIN OUR COMMUNITY</a>
+    </footer>
+  </main>
 </body>
 </html>
